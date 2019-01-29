@@ -15,3 +15,16 @@ test('Is null to return null values', () => {
 test('Check value to return false values', () => {
   expect(functions.checkValue(0)).toBeFalsy();
 });
+
+test('Check object should be my name', () => {
+  expect(functions.createUser()).toEqual({
+    name: 'Raphael',
+    surname: 'Eyerin'
+  });
+});
+
+test('Should be under 1600', () => {
+  const load1 = 800;
+  const load2 = 1100;
+  expect(load1 + load2).toBeLessThanOrEqual(1800);
+});
