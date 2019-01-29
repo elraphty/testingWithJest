@@ -1,10 +1,10 @@
 {
-  "name": "jesttest",
+  "name": "mytest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest ./functions"
   },
   "author": "",
   "license": "ISC",
