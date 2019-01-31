@@ -4,11 +4,15 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "jest ./functions"
+    "test": "jest ./test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "install": "^0.12.2"
   }
 }

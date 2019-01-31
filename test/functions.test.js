@@ -28,3 +28,18 @@ test('Should be under 1600', () => {
   const load2 = 1100;
   expect(load1 + load2).toBeLessThanOrEqual(1800);
 });
+
+// Regex
+test('There is no I in team', () => {
+  expect('teamI').not.toMatch(/I/);
+});
+
+// Working with async data
+
+test('User fetch name should be', () => {
+  expect.assertions(1)
+  return functions.fetchUser()
+  .then(data => {
+    expect(data.name).toEqual('Leanne Graham');
+  });
+});
