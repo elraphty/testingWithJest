@@ -35,11 +35,17 @@ test('There is no I in team', () => {
 });
 
 // Working with async data
-
 test('User fetch name should be', () => {
   expect.assertions(1)
   return functions.fetchUser()
   .then(data => {
     expect(data.name).toEqual('Leanne Graham');
   });
+});
+
+// Using Aysnc
+test('User fetch name should be', async () => {
+  expect.assertions(1)
+  const data = await functions.fetchUser()
+  expect(data.name).toEqual('Leanne Graham');
 });
